@@ -15,6 +15,12 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	
+	<script type="text/javascript" src="jQuery.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/core.js"></script>
+	
+	<!-- Bootstrap core JavaScript-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
   </head>
 
   <body>
@@ -28,14 +34,25 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">TP</a>
+          <a class="navbar-brand menu" href="index.html">TP</a>
         </div>
+		
         <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">O mnie</a></li>
-            <li><a href="hobby.html">Hobby</a></li>
-            <li><a href="praca.html">Praca</a></li>
-          </ul>
+			<ul class="nav navbar-nav">
+			
+				<li><a href="index.html">O mnie</a></li>
+				<li class="active"><a href="hobby.html">Hobby</a></li>
+				<li class="dropdown">
+					<a href="">Praca</a>
+						<ul class="sub-menu">
+							<li><a href="#">CA</a></li>
+							<li class="dropdown">
+								<a href="#">UJ</a>
+							</li>	
+						</ul>
+				</li>
+			</ul>
+			
         </div>
       </div>
     </nav>
@@ -44,16 +61,15 @@
       <div class="start_page">
         <div class="row">
 			<div class="col" >
-				<h2 class="textContainer">Motocykle</h2> 
+				<h2 class="textContainer" style="color:white;">Motocykle</h2> 
 			</div>
 		</div>
 		<div class="row row-padded">
-			<div class="col-md-6 " >
-				<img src="images/moto1.jpg" class="img-responsive" alt="Tu coś fajnego :p"> 
-			</div>
-			<div class="col-md-6 " >
-				<img src="images/moto2.jpg" class="img-responsive" alt="Tu coś fajnego :p"> 
-			</div>
+			<div id="slideshow">
+				<div><img src="images/moto1.jpg" width="100%" height="100%" class="active" /></div>
+				<div><img src="images/moto2.jpg" width="100%" height="100%"/></div>
+				<div><img src="images/moto3.jpg" width="100%" height="100%"/></div>
+			</div>  
 		</div>
 		<div class="row row-padded">
 			<div class="col" >
@@ -64,22 +80,21 @@ To, że jedziemy pojazdem dwukołowym nie znaczy, że jesteśmy gorsi od człowi
 		</div>
 		<div class="row">
 			<div class="col" >
-				<h2 class="textContainer">Góry</h2> 
+				<h2 class="textContainer" style="color:gr;">Góry</h2> 
 			</div>
 		</div>
-		<div class="row">
+		<div class="row row-padded">
 			<div class="col" >
-				<h4><p> 
-					fajny opis
-				</p></h4>
+				<h4><p> Góra – wypukła forma ukształtowania terenu o wysokości względnej większej niż 300 m[1]. W Europie za tereny górskie uważa się tereny położone powyżej 500 m n.p.m. Ze względu na wysokości bezwzględne wyróżnia się góry niskie, średnie i wysokie. Ze względu na sposób powstania wyróżnia się góry fałdowe, zrębowe, wulkaniczne i ostańce.
+
+W rzeźbie górskiej wyróżnić można formy wklęsłe (doliny, kotliny) i wypukłe (pojedyncze szczyty). Formy wypukłe łączą się w grzbiety górskie lub masywy górskie, te z kolei w pasma górskie. Pasma i masywy wraz z pogórzami i kotlinami śródgórskimi tworzą łańcuchy górskie. Kilka łańcuchów górskich o wspólnych cechach geologicznych, powstałe w czasie tego samego fałdowania noszą nazwę systemu górskiego. Góry fałdowe i zrębowe powstają w wyniku procesów orogenicznych, natomiast wulkaniczne w wyniku działalności wulkanicznej, a ostańce w wyniku działalności erozyjnej i denudacyjnej głównie wody.
+</p></h4>
 			</div>
 		</div>
-      </div>
-    </div>
+		
+      </div>  
+  </div>
 
-
-    <!-- Bootstrap core JavaScript-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     
   </body>
 </html>

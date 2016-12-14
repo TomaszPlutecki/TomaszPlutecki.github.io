@@ -14,6 +14,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<script type="text/javascript" src="jQuery.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	
+	<!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 
   </head>
@@ -29,25 +35,38 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">TP</a>
+          <a class="navbar-brand menu" href="index.html">TP</a>
         </div>
+		
         <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">O mnie</a></li>
-            <li><a href="hobby.html">Hobby</a></li>
-            <li><a href="praca.html">Praca</a></li>
-          </ul>
+			<ul class="nav navbar-nav">
+			
+				<li class="active"><a href="index.html">O mnie</a></li>
+				<li><a href="hobby.html">Hobby</a></li>
+				<li class="dropdown">
+					<a href="">Praca</a>
+						<ul class="sub-menu">
+							<li><a href="#">CA</a></li>
+							<li class="dropdown">
+								<a href="uj.html">UJ</a>
+							</li>	
+							<li class="dropdown">
+								<a href="#">Java</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+			
         </div>
       </div>
     </nav>
 
     <div class="container">
-      <div class="start_page">
-		<img src="images/ja.jpg" class="img-responsive icenter img-rounded" alt="Tu moje zdjecie :p" width="300" height="300"> 
+      <div class="start_page"> 
 		
 		<div class="row row-padded row-eq-height">
-			<div class=" vcenter">
-				<h2>Człowiekiem</h2>
+			<div class="col-md-2 vcenter">
+				<h3 class="textContainer ">Człowiekiem</h2>
 			</div>
 			<div class="col-md-10 ">
 				 <img src="images/i.jpg" class="img-responsive img-circle iright" alt="Tu moje zdjecie :p" width="300" height="300"> 
@@ -57,17 +76,17 @@
 		
 		<div class="row row-padded row-eq-height">
 			<div class="col-md-2 vcenter" >
-				<h2 class="textContainer ">Adminem</h2> 
+				<h3 class="textContainer ">Adminem</h2> 
 			</div>
 			<div class="col-md-10">
-				<img src="images/admin.png" class="img-responsive img-rounded ileft" alt="Tu coś fajnego :p" width="300" height="300"> 
+				<img src="images/admin.png" class="img-responsive img-rounded iright" alt="Tu coś fajnego :p" width="300" height="300"> 
 				<p class="normal">Jendak też adminem</p>
 			</div>
 		</div>
 		
 		<div class="row row-padded row-eq-height">
 			<div class="col-md-2 vcenter" >
-				<h2 class="textContainer">Studentem</h2> 
+				<h3 class="textContainer">Studentem</h2> 
 			</div>
 			<div class="col-md-10">
 				<img src="images/uj.png" class="img-responsive img-rounded iright" alt="Tu coś fajnego :p" width="300" height="300">
@@ -77,18 +96,27 @@
 		
 		<div class="row row-padded row-eq-height">
 			<div class="col-md-2 vcenter" >
-				<h2 class="textContainer ">Motocyklistą</h2> 
+				<h3 class="textContainer ">Motocyklistą</h2> 
 			</div>
 			<div class="col-md-10">
-				<img src="images/moto3.jpg" class="img-responsive img-rounded ileft" alt="Tu coś fajnego :p" width="300" height="300"> 
+				<img src="images/moto3.jpg" class="img-responsive img-rounded iright" alt="Tu coś fajnego :p" width="300" height="300"> 
 				<p class="normal">Bo ktoś musi być dawcą organów</p>
+			</div>
+		</div>
+		<div class="row row-padded row-eq-height">
+			<div class="col-md-2 vcenter" >
+				<h3 class="textContainer ">Zawartosc 5</h2> 
+			</div>
+			<div class="col-md-10">
+				<img src="images/moto3.jpg" class="img-responsive img-rounded iright" alt="Tu coś fajnego :p" width="300" height="300"> 
+				<p class="normal">Tresc</p>
 			</div>
 		</div>
 		
 		 <div class="row">
     <div class="col-sm-4">
-      <h3>Konatakt</h3>
-      <p>
+      <h3 style="color:white;">Konatakt</h3>
+      <p style="color:white;">
 	  e-mail:	tplutecki2545@gmail.com <br>
 	  skype:	tomasz_plutecki
 	  </p>
@@ -100,19 +128,15 @@
 	  <img src="images/snp.jpg" class="img-responsive img-rounded ileft" alt="Tu coś fajnego :p" width="50" height="50">
     </div>
     <div class="col-sm-4">
-      <h3>Uwagi</h3>        
-      <p>Strona o mnie, <br>
+      <h3 style="color:white;">Uwagi</h3>        
+      <p style="color:white;">Strona o mnie, <br>
 	  zaprojektowane przeze mnie, <br>
 	  dziękuje za wpadnięcie</p>
     </div>
   </div>
 </div>
-      </div>
-    </div>
-
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</div>
+</div>
     
   </body>
 </html>

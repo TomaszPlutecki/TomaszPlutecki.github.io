@@ -14,6 +14,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
+	<script type="text/javascript" src="jQuery.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+	
+	<!-- Bootstrap core JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </head>
 
   <body>
@@ -27,25 +33,32 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html">TP</a>
+          <a class="navbar-brand menu" href="index.html">TP</a>
         </div>
+		
         <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index.html">O mnie</a></li>
-            <li><a href="hobby.html">Hobby</a></li>
-            <li><a href="praca.html">Praca</a></li>
-          </ul>
+			<ul class="nav navbar-nav">
+			
+				<li><a href="index.html">O mnie</a></li>
+				<li><a href="hobby.html">Hobby</a></li>
+				<li class="dropdown active">
+					<a href="">Praca</a>
+						<ul class="sub-menu">
+							<li><a href="#">CA</a></li>
+							<li class="dropdown">
+								<a href="uj.html">UJ</a>
+							</li>	
+							<li class="dropdown">
+								<a href="#">Java</a>
+							</li>
+						</ul>
+				</li>
+			</ul>
+			
         </div>
       </div>
     </nav>
 
-    <div class="container-fluid">
-      <div class="start_page">
-		<img src="images/ups.jpg" class="img-responsive" alt="Nie działa :p">
-      </div>
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     
   </body>
 </html>
